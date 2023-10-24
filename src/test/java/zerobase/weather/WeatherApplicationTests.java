@@ -1,7 +1,6 @@
 package zerobase.weather;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions.*;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,25 +8,25 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class WeatherApplicationTests {
 
-	@Test
-	void equalTest() {
+    @Test
+    void equalTest() {
 
-	    assertEquals(1, 1);
+        assertEquals(1, 1);
 
-	}
+    }
 
-	@Test
-	void nullTest() {
+    @Test
+    void nullTest() {
 
-	    assertNull(null);
+        assertNull(null);
 
-	}
+    }
 
-	@Test
-	void trueTest() {
+    @Test
+    void trueTest() {
 
-	    assertTrue(true);
+        assertTrue(true);
 
-	}
+    }
 
 }
