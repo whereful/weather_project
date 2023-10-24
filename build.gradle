@@ -33,6 +33,9 @@ dependencies {
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // 스프링부트에서 지원하지 않는 것은 버전 명시 필요
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 }
 
 tasks.named('test') {
