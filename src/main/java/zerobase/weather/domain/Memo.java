@@ -20,5 +20,4 @@ public class Memo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String text;
-
 }

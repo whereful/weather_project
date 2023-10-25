@@ -9,7 +9,8 @@ import zerobase.weather.domain.Memo;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 /**
@@ -32,7 +33,7 @@ class JpaMemoRepositoryTest {
         jpaMemoRepository.save(memo);
 
         // then
-        List<Memo> memoList =  jpaMemoRepository.findAll();
+        List<Memo> memoList = jpaMemoRepository.findAll();
 
         assertTrue(memoList.size() > 0);
 
@@ -53,7 +54,7 @@ class JpaMemoRepositoryTest {
         // then
         Optional<Memo> result = jpaMemoRepository.findById(memo.getId());
 
-         assertEquals(result.get().getText(), "fff");
+        assertEquals(result.get().getText(), "fff");
     }
 
 }
