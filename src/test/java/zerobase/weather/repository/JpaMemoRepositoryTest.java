@@ -12,6 +12,10 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
+/**
+ * 테스트 코드를 통해서 db의 상태가 변경되는 것을 원치 않으면 테스트 과정에서 db에 변경했던 걸 원래대로
+ * 복구시킴
+ */
 @Transactional
 class JpaMemoRepositoryTest {
 
