@@ -19,7 +19,7 @@ public interface DiaryRepository extends JpaRepository<Diary, Integer> {
 
     // deleteAllByDate만 적으면 부족함
     // @Transactional을 붙여야 제대로 작동함
-    @Transactional
+    // 보통은 Service 클래스에 붙임
     void deleteAllByDate(LocalDate date);
 
 }
