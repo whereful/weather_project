@@ -13,21 +13,11 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity(name = "diary")
-public class Diary {
+@Entity(name = "date_weather")
+public class DateWeather {
     @Id // 해당 변수값은 db에 존재하는 테이블의 id값과 일치되게 함
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private LocalDate date;
     private String weather;
     private String icon;
     private double temperature;
-    private String text;
-    private LocalDate date;
-
-    public void setDateWeather(DateWeather dateWeather) {
-        this.date = dateWeather.getDate();
-        this.weather = dateWeather.getWeather();
-        this.icon = dateWeather.getIcon();
-        this.temperature = dateWeather.getTemperature();
-    }
 }
